@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+
+	<style type="text/css">
+		body{
+	padding: 0px;
+	background-size: contain;
+	margin: 0px;
+}
+.video_selector{
+
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height:100%;
+	width: auto;
+	height: auto;
+	z-index:-999;
+	
+}
+#header{
+	height: 60px;
+	background: rgba(1,0,1,0.5);
+	margin-top: -20px;
+}
+.horizontal-list
+{
+	list-style: none;
+	
+	color: white;
+
+}
+
+.horizontal-list li{	
+	display: inline-block;
+	font-size:25px;
+	text-align: right;
+	
+}
+.horizontal-list li a{
+	/*margin-top: 50px;*/
+	float: right;
+	color: white;
+	text-decoration: none;
+	transition: color 0.5s, border-bottom 4s;
+}
+.horizontal-list li a:hover{
+	color:#B53471;
+	border-bottom: 1px solid white;
+}
+.welcome{
+	color: #B53471;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 100px;
+}
+.title{
+	color:white;
+	font-size: 120px;
+	text-align: center;
+	margin-top: 50px;
+}
+.h3{
+	color:white;
+	text-align: center;
+	font-size:30px;
+	margin-top:80px;
+}
+.mbtn{
+	background-color: #D5003C;
+	color:white;
+	margin-top: 50px;
+	margin-left: 650px;
+      
+      }
+.mbtn a{
+text-decoration: none;
+color: white;
+font-size: 25px;
+
+}
+
+.horizontal-list-btm{
+	display: inline-block;
+	font-size:25px;
+	text-align: right;
+	margin-bottom: -400px;
+	
+}
+.horizontal-list-btm li{	
+	display: inline-block;
+	font-size:25px;
+	text-align: right;
+	
+}
+.horizontal-list-btm li a{
+	/*margin-top: 50px;*/
+	float: right;
+	color: white;
+	text-decoration: none;
+	transition: color 0.5s, border-bottom 4s;
+}
+#footer
+{ height: 50px;
+	margin-top:80px;
+	margin-bottom: -50px;
+
+	background-color: rgba(1,0,1,0.5);
+}
+.button
+{
+	background-color:#D5003C;
+	height: 30px;
+	padding: 10px;
+	margin: 10px;
+	width:200px; 
+	border: 2px solid white;
+	border-radius: 12px;
+	font-size: 15px;
+	/*margin-top: -10px;*/
+}
+	</style>
+</head>
+<body>
+<header>
+
+	
+</header>
+	<div id = "header">
+	
+	<ul class = "horizontal-list">
+		<li><img src="images\largem.png" style="height: 60px;width:120px;margin-left:-40px;padding: 0px;"></li>
+		<li><a href="#default" style="margin-right: -700px;margin-top: 15px;" href = "index2.html">HOME</a></li>
+		<li><a  style="margin-right: -900px;"  href = "library.html">LIBRARY</a></li>
+		<li><a style="margin-right: -1050px;" href = "aboutus.html">ABOUT</a></li>
+		<li><a style="margin-right: -1200px;"  href = "login.html">LOGIN</a></li>
+	    <li><a style="margin-right: -1350px;" href = "signup.html">SIGNUP</a></li>
+	
+	</ul>	
+		
+ </div>
+
+ <video autoplay loop muted class = "video_selector">
+ 	<source src="images\main1.mp4" type="video/mp4">
+ </video>
+<h6 class="welcome">WELCOME TO</h6>
+<h1 class="title">[ SKY BEAT ]</h1>
+<h3 class = "h3">CONGRATULATIONS,YOU ARE LOST</h3>
+<button class="mbtn"><a href = "library.html">LISTEN NOW</a></button>
+
+	<div id = "footer">
+		<button class="button" onclick="location.href='goaddfree.html'" type="button">
+         Go Add Free</button>
+         <button class="button" onclick="location.href='getplus.html'" type="button">
+        Get Skybeat Plus</button>
+
+        <span style="color: white;margin-bottom: -100px;padding-left: 700px;">FOLLOW US-</span>
+
+<span><img style = "height: 20px;width: 25px;margin-left: 30px;margin-top: 20px;"src="images\twi.png"></span>
+<span><img style = "height: 20px;width: 25px;margin-left: 30px;margin-top: 20px;"src="images\fb.png"></span>
+<span><img style = "height: 20px;width: 25px;margin-left: 30px;margin-top: 20px;"src="images\insta.png"></span>
+
+
+  </div>
+	
+
+</body>
+</html>

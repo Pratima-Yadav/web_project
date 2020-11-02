@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>library</title>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="library.css">
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<script>
+		$(function(){
+
+			$('.carousel').carousel(); 
+		})
+	</script>
+</head>
+<body>
+</head>
+<body>
+
+<video autoplay loop muted class = "video_selector">
+ 	<source src="images\main1.mp4" type="video/mp4">
+ </video>
+	<div class="container-fluid">
+
+ <div class = "row row2">
+  	 <div class = "col col6">
+
+       <div class = "header"></div>
+       <input  type="checkbox" style="display: none;" id="openSidebarMenu">
+       <label for = "openSidebarMenu" class = "sidebarIconToggle">
+       	
+
+     <div class="spinner top"></div>
+     <div class="spinner middle"></div>
+     <div class="spinner bottom"></div>
+
+
+       </label>
+  	 	  <span id = "sidebarMenu">
+  	 	  	<ul class = "menu">
+  	 	  		<li><a style="margin-left: 700px;font-size: 30px;" href = "index.html">Home</a></li>
+  	 	      	<li><a style="margin-left: 700px;font-size: 30px;" href = "library.html">library</a></li>
+  	 	         <li><a style="margin-left:700px;font-size: 30px;" href = "aboutus.html">About Us</a></li>
+  	 	        <li><a style="margin-left: 700px;font-size: 30px;" href = "login.html">login</a></li>
+  	              <li><a style="margin-left:700px;font-size: 30px;" href = "signup.html">Sign up</a></li></ul>
+  	 	  </span>
+
+            
+	            <span class = "favourite">Favourites</span>
+		        <span class = "search"><input style="width: 400px; height: 40px;margin-bottom: 0px; color:white;background-color: black;margin-left:-70px;" type="text" name="search" placeholder ="search...">
+		         <button style ="background-color: #6F1E51;height: 40px;width: 40px;"ype="submit" ><i class="fa fa-search"></i></button></span>
+                 <span><img style="margin-left: 40px;"class = "logo2" src = "img\bell.png"></span>
+                  <span style="margin-left: 140px;"><img style="margin-bottom: -10px;"class  = "logo" src="images\logo3.png"></span></div>
+                
+      
+  </div>
+
+
+  <div class="row ">
+  	  <div class = "col  col1">
+  	  	    <div id = "myCarousel" class = "carousel slide crsl" data-ride = "carousel">
+    
+                <ol class = "carousel-indicators">     
+    	            <li data-target = "#myCarousel" data-slide-to = "0"></li>
+    	            <li data-target = "#myCarousel" data-slide-to = "1" ></li>
+    	            <li data-target = "#myCarousel" data-slide-to = "2" ></li>
+    	            <li data-target = "#myCarousel" data-slide-to = "3" ></li>
+               </ol>
+
+
+		 <div class = "carousel-inner">
+			      <div class = "carousel-item active" >
+                     <img style = " padding-top: 60px;padding-left: 0px;height:300px;width: 600px;" src = "images\10.jpg">
+                   </div>
+                   <div class = "carousel-item" >
+                      <img style = " padding-top: 60px;padding-left: 0px;height:300px;width: 600px;" src = "images\11.jpg">
+                  </div>
+                  <div class = "carousel-item" >
+                       <img style = " padding-top: 60px;padding-left: 0px;height:300px;width: 600px;"  src = "images\30.jpeg">
+                  </div>
+                  <div class = "carousel-item">
+                       <img style = " padding-top: 60px;padding-left: 0px;height:300px;width: 600px;"  src = "images\3.jpg">
+                   </div>
+             </div>
+                        <a href="#myCarousel" class = "carousel-control-prev" data-slide="prev">
+	                    <span class = "carousel-control-prev-icon "> </span></a>
+	                    <a href="#myCarousel" class = "carousel-control-next" data-slide="next">
+	                     <span class = "carousel-control-next-icon"> </span></a>
+  	         </div>
+
+         
+       <div class = "songs">
+		    <h3 >LATEST RELEASED</h3>
+	    </div>
+
+	  <div class = "musics">
+		    <div class="img div1">
+
+<audio id="myAudio">
+  
+  <source src="audio\raazi.mp3" type="audio/mpeg">
+ 
+</audio>
+			   <span><img  style="height:100px;width:100px;" src="images\aemeredil.jpg">
+
+			   	<button onclick="playAudio()" type="button"><img src="images\play3.png"></button>
+               <button onclick="pauseAudio()" type="button"><img src="images\pause2.png"></button> </span>
+			    <span style="font-size: 15px; color:white;font-style: italic;">AE MERE DIL (oct,2020) </span>
+
+		    </div>
+			<div class="img div2">
+				<span><img  style="height:100px;width:100px;" src="images\khalifa.jpg"></span>
+
+				<button onclick="playAudio()" type="button"><img src="images\play3.png"></button>
+               <button onclick="pauseAudio()" type="button"><img src="images\pause2.png"></button> </span>
+			    <span style="font-size: 15px; color:white;font-style: italic;">BURJ KHALIFA(oct,2020) </span>
+            </div>
+            <div class="img div3">
+				<span><img  style="height:100px;width:100px;" src="images\naach.webp"></span>
+
+				<button onclick="playAudio()" type="button"><img src="images\play3.png"></button>
+               <button onclick="pauseAudio()" type="button"><img src="images\pause2.png"></button> </span>
+			    <span style="font-size: 15px; color:white;font-style: italic;">NACH MERI RANI(oct,2020) </span>
+			</div>
+			<div class="img div4">
+				<span><img  style="height:100px;width:100px;" src="images\teri.webp"></span>
+				<button onclick="playAudio()" type="button"><img src="images\play3.png"></button>
+               <button onclick="pauseAudio()" type="button"><img src="images\pause2.png"></button> </span>
+			    <span style="font-size: 15px; color:white;font-style: italic;">TERI AANKHON(oct,2020) </span>
+				</div>
+		</div></div>
+  
+
+  	<div class = "col col2">
+             
+			<span style="color: white;opacity: 1px;font-size: 30px;margin-top: 20px;">Queue</span>
+			<span><img  style="height: 30px;width: 30px;margin-left: 270px;margin-top: -4px;" src="images\option.png"></span>
+
+
+			<div>
+                <span>
+				<img style="height:50px;width:50px;margin-top: 20px;" src ="images\dhadak.jpg">
+          </span>
+                <span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Dhadak</span>
+				<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>  
+
+              <hr class="new">
+				<spaytn><img style="height:50px;width:50px;margin-top: 5px;" src ="images\raazi.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Raazi</span>
+			<audio controls class = "audio">
+		       <source src="audio\raazi.mp3" type="audio/mpeg">
+	            </audio>
+
+			<hr class="new">
+				<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\badhaai ho.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Badhai ho</span>
+			<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+
+			<hr class="new">
+				<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\mubarakan.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Mubarakan</span>
+			<audio st controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+
+			<hr class="new">
+				<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\raabta.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Raabta</span>
+             <audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+
+			<hr class="new">
+				<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\kalank.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Kalank</span>
+			<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+
+			<hr class="new">
+				<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\ramleela.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">RamLeela</span>
+			<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+
+			<hr class="new">
+			<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\bahubali_2.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Bahubali 2</span>
+			<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+
+			<hr class="new">
+			<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\half_gf.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Half Girlfriend</span>
+			<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+			<hr class="new">
+			<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\tubelight.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Tubelight</span>
+			<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+			<hr class="new">
+			<span><img style="height:50px;width:50px;margin-top: 5px;" src ="images\jagga_jasoos.jpg"></span>
+			<span style="vertical-align:bottom;margin-bottom:70px;color: white;margin-left: 15px;font-size: 20px;">Jagga Jasoos</span>
+			<audio controls class = "audio">
+		       <source src="audio\dhadak.mp3" type="audio/mpeg">
+	            </audio>
+			<hr class="new">
+			s
+			
+			
+		</div>
+	</div>
+        
+</div>
+
+
+<div class="row">
+
+	<div class = "col">
+            <div class = "songs">
+	   	    <h3 style="margin-top:-200px;"> POPULAR ARTISTS</h3>
+	       </div>
+
+	   <div class = "col col3">
+	      <div >
+	      	<img class = "artist" src="images\sonunigam.png">
+	      	<h6 style="color:white;margin-left: 20px;margin-top:0px;">Sonu Nigam</h6>
+	      </div>
+	      <div>
+	      	<img class = "artist" src="images\ari.png">
+	      	<h6 style="color:white;margin-left: 20px;margin-top: 0px;">Arijit Singh</h6>
+	      </div>
+	       <div >
+	      	<img class = "artist" src="images\honey.png">
+	      	<h6 style="color:white;margin-left: 20px;margin-top: 0px;">Honey Singh</h6>
+	      </div>
+	       <div >
+	      	<img class = "artist" src="images\art3.jpg">
+	      	<h6 style="color:white;margin-left: 20px;margin-top: 0px;">Neha Kakkar</h6>
+	      </div>
+	       <div >
+	      	<img class = "artist" src="images\jubin.jpg">
+	      	<h6 style="color:white;margin-left: 20px;margin-top: 0px;">Jubin Nautiyal</h6>
+	      </div>
+	       <div>
+	      	<img class = "artist" src="images\art4.jpg">
+	      	<h6 style="color:white;margin-left: 20px;margin-top: 0px;">Dhvani Bhanushali</h6>
+	      </div>
+	       <div >
+	      	<img class = "artist" src="images\art5.jpg">
+	      	<h6 style="color:white;margin-left: 20px;margin-top: 0px;">Atif Aslam</h6>
+	      </div>
+	       <div >
+	      	<img class = "artist" src="images\art6.jpg">
+	      	<h6 style="color:white;margin-left: 20px;margin-top: 0px;">Shreya Ghoshal</h6>
+	      </div>
+	      
+	</div>
+</div></div>
+
+
+<div class = "row">
+	<div class = "col stations">
+		  <div>
+			<img class="station-pic" src="images\station.png">
+		</div>
+		<div id="div1" class="div">
+			<h6 id = "my-image" style="color:white;margin-top: 20px;margin-left: 30px;">Love</h6>
+		</div>
+		<div id = "div2" class="div">
+			<h6 style="color:white;margin-top: 20px;margin-left: 30px;">Retro</h6>
+		</div>
+		<div id = "div3" class="div">
+			<h6 style="color:white;margin-top: 20px;margin-left: 30px;">chill</h6>
+		</div>
+		<div  id = "div4" class="div">
+			<h6 style="color:white;margin-top: 20px;margin-left: 30px;">Workout</h6>
+		</div>
+		<div id = "div5" class="div">
+			<h6 style="color:white;margin-top: 20px;margin-left: 30px;">Rock</h6>
+		</div>
+		<div id = "div6" class="div">
+			<h6 style="color:white;margin-top: 20px;margin-left: 30px;">Pop</h6>
+		</div>
+	</div>
+	<div class = "col vacant">
+
+	</div>
+</div>
+<div class = "row">
+	<div class = "col mode">
+		<div class="div9 img-thumbnail img-fluid">
+			<h2  style="color: white;margin-left:110px;margin-top: 80px;">PARTY</h2>
+
+
+		</div>
+		<div class="div10 img-thumbnail img-fluid">
+			<h2 style="color: white;margin-left:70px;margin-top: 80px;">ELECTRONICS</h2>
+		</div>
+		<div class="div11 img-thumbnail img-fluid">
+			<h2 style="color: white;margin-left:70px;margin-top: 80px;">ROAD TRIP</h2>
+		</div>
+
+	</div>
+</div></div>
+    
+<div class = "row">
+	<div class="col col11">
+	     <div class = "songs">
+	   	    <h3 style="margin-top: -50px;"> LATEST ENGLISH</h3>
+	       </div>
+
+	   <div class = "eng">
+	      <div >
+	      	<img class="latest1 " src="images\eng1.png">
+	      	<h6 style="color:white;margin-left: 20px;">Baby I,m Jealous</h6>
+	      	<p style="color: white;margin-left: 30px;margin-top: -12px;">(oct 7,2020)</p>
+	      </div>
+	      <div>
+	      	<img  class="latest1" src="images\spell.jpg">
+	      	<h6 style="color:white;margin-left: 40px;">Spell On Me</h6>
+	      		<p style="color: white;margin-left: 30px;margin-top: -12px;">(march 23,2020)</p>
+	       </div>
+	       <div >
+	      	<img class="latest1 " src="images\cdc.jpg">
+	      	<h6 style="color:white;margin-left: 20px;">Commander in Chief</h6>
+	      		<p style="color: white;margin-left: 30px;margin-top: -12px;">(oct 13,2020)</p>
+	      </div>
+	       <div >
+	      	<img class="latest1 " src="images\missed.jpg">
+	      	<h6 style="color:white;margin-left: 20px;">Missed A Spot</h6>
+	      		<p style="color: white;margin-left: 30px;margin-top: -12px;">(may 4,2020)</p>
+	      </div>
+	       <div >
+	      	<img class="latest1 " src="images\mad.jpg">
+	      	<h6 style="color:white;margin-left: 20px;">Mad At Disney</h6>
+	      		<p style="color: white;margin-left: 30px;margin-top: -12px;">(sep 2,2020)</p>
+	      </div>
+	       <div>
+	      	<img class="latest1 " src="images\cc.jpg">
+	      	<h6 style="color:white;margin-left: 20px;">Cotton Candy</h6>
+	      		<p style="color: white;margin-left: 30px;margin-top: -12px;">(oct 7,2020)</p>	      </div>
+	       </div >
+	      
+	      
+	</div>
+
+<div class = "row">
+	<div class="col col22 ">
+	     <div class = "songs">
+	   	    <h3> LATEST HINDI</h3>
+	       </div>
+
+	   <div class = "eng">
+	      <div >
+	      	<img class="latest2 latest" src="images\sun.webp">
+	      	<h6 style="color:white;margin-left: 40px;">Sunn Zara</h6>
+	      	<p style="color: white;margin-left: 37px;margin-top: -12px;">(oct 5,2020)</p>
+	      </div>
+	      <div>
+	      	<img  class="latest2 latest" src="images\phir.jpg">
+	      	<h6 style="color:white;margin-left: 40px;">Phir Chala</h6>
+	      		<p style="color: white;margin-left: 37px;margin-top: -12px;">(oct 2,2020)</p>
+	       </div>
+	       <div >
+	      	<img class="latest2 latest" src="images\duniya.jpg">
+	      	<h6 style="color:white;margin-left: 10px;">Duniya Sharma Jayegi</h6>
+	      		<p style="color: white;margin-left: 35px;margin-top: -12px;">(sept 17,2020)</p>
+	      </div>
+	       <div >
+	      	<img class="latest2 latest" src="images\haseena.jpg">
+	      	<h6 style="color:white;margin-left: 20px;">Hasina pagal diwani</h6>
+	      		<p style="color: white;margin-left: 37px;margin-top: -12px;">(sept 15,2020)</p>
+	      </div>
+	       <div >
+	      	<img class="latest2 latest" src="images\choco.jpg">
+	      	<h6 style="color:white;margin-left: 45px;">Chocolate</h6>
+	      		<p style="color: white;margin-left: 37px;margin-top: -12px;">(sept 6,2020)</p>
+	      </div>
+	       <div>
+	      	<img class="latest2 latest" src="images\dil.jpg">
+	      	<h6 style="color:white;margin-left: 45px;">Dil Chahte ho</h6>
+	      		<p style="color: white;margin-left: 45px;margin-top: -12px;">(sept 2,2020)</p>	      </div>
+	       <div >
+	      
+	      
+	</div>
+
+	</div>
+
+
+<script type="text/javascript">
+	
+	function myFunction(x) {
+  x.classList.toggle("change");
+}
+
+
+
+////////
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+</body>
+</html>
